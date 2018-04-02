@@ -3,7 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-	<title>InfoRetro Prototype</title>
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
 	<script
 			  src="https://code.jquery.com/jquery-3.3.1.js"
 			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -25,10 +33,6 @@
         padding: 25px 50px;
     }
    
-
-    
-
-}
 </style>
 
 <body style="height: 100%">
@@ -111,8 +115,8 @@
                     </P>
                 </div>
                 
-                <button type="button" onclick="relevant();draw();screenshot2();redirect('http://google.com');">Relevant</button>
-                <button type="button" onclick="notrelevant();draw();screenshot2();redirect('http://google.com');">Not relevant</button>
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('310_5.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('310_5.html');">Not relevant</button>
                 
             </foreignobject>
 		<path/>
@@ -124,7 +128,14 @@
 
 </body>	
     
-    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
  
     <script src="../js/html2canvas.js"></script>
     <script src="../js/mousetracking.js"></script>
