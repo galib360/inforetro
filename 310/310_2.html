@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<title>InfoRetro Prototype</title>
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+
+    
+
+}
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Radio Waves and Brain Cancer" </h1>
+                <div>
+                    <h2> Chinese Surgeon Draws "Road Map" For the Brain </h2>
+
+<P>
+HARBIN, November 21 (Xinhua) -- The workings of the human brain
+remains a mystery. The brain is often described as a "virgin
+forest" because of its complexity.
+</P>
+<P>
+A "road map" for the brain devised by a Chinese surgeon will
+serve as a guide for doctors performing cerebral operations. Brain
+surgeons often use an endoscope with a micro-video camera or other
+medical instruments to help explore the human brain during
+operations.
+</P>
+<P>
+Doctor Han Zhanqiang works at the No.1 Hospital Attached to
+Harbin Medical Sciences University in the northeast province of
+Heilongjiang. The slender, tubular optical instrument can enter
+the brain via "three routes". These "three routes" have been
+carefully marked by Dr. Han to guide other doctors when examining
+the brain. 
+</P>
+                </div>
+                
+                <button type="button" onclick="relevant();draw();screenshot2();redirect('http://google.com');">Relevant</button>
+                <button type="button" onclick="notrelevant();draw();screenshot2();redirect('http://google.com');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>
