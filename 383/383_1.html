@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+        
+    <div id="body" style="padding: 30px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                         
+                    <h1>Topic: "Mental Illness Drugs" </h1>
+        
+        
+                    <div>
+                        <h2> Schizophrenia, other diseases require much more than medicine </h2>
+                        <P>
+                                DAYTON, Ohio _ The benefits of psychotherapy and social support,
+                             long recognized in treating depressive disorders, also are gaining
+                             acceptance as an essential element in treating schizophrenia and
+                             other mental illnesses that involve psychoses.
+                             </P>
+                             <P>
+                                ``We know that people with severe mental illness need more than
+                             a pill and a doctor's visit,'' says Laurie Flynn, executive
+                             director of the National Alliance for the Mentally Ill (NAMI).
+                             Vicki Lynn Bentley of Dayton, founder of the area's Schizophrenics
+                             Anonymous (SA) support group chapter, has known that for a long
+                             time.
+                             </P>
+                             <P>
+                                ``The medication is like a Band-Aid,'' says Bentley, explaining
+                             the value of her psychotherapy at the VA Medical Center. ``A person
+                             has symptoms _ hearing voices, anxiety, whatever _ and medication
+                             alone is just like sticking a Band-Aid on a cut without adding any
+                             medicine to it. The cut will take a lot longer to heal, if it ever
+                             does heal.''
+                             </P>
+                             <P>
+                                Schizophrenia is a disorder characterized by delusions and
+                             hallucinations, according to University of Florida researchers who
+                             reported last month on brain structure differences that could lead
+                             to tools for diagnosing or predicting the illness. The roughly 2.5
+                             million schizophrenics in the United States might hear voices no
+                             one else hears or sense they're being spied on or persecuted, but
+                             they do not have the multiple personalities that pop culture often
+                             erroneously attributes to them.
+                             </P>
+                            
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('383_2.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('383_2.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1300">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Black Bear Attacks" </h1>
+                <div>
+                    <h2> THE WORST-CASE SCENARIO SURVIVAL HANDBOOK </h2>
+                    <P>
+                            There are about 650,000 black bears in North America, and only
+                         one person every three years is killed by a bear _ although there
+                         are hundreds of thousands of encounters. Most bears in the
+                         continental United States are black bears, but black bears are not
+                         always black in color: Sometimes their fur is brown or blond. Males
+                         are generally bigger than females (125 pounds to 500 pounds for
+                         males, 90 pounds to 300 pounds for females).
+                         </P>
+                         <P>
+                            Bears can run as fast as horses, uphill or downhill. They can
+                         also climb trees.
+                         </P>
+                         <P>
+                            Bears have excellent senses of smell and hearing _ and they're
+                         extremely strong. They can tear cars apart looking for food.
+                         </P>
+                         <P>
+                            Every bear defends a ``personal space.'' The extent of this
+                         space will vary with each bear and each situation; it may be a few
+                         feet or a few hundred feet. Intrusion into this space is considered
+                         a threat and may provoke an attack.
+                         </P>
+                         <P>
+                            It's important to know that bears aggressively defend their
+                         food. Stay away from dead animals because bears may attack to
+                         defend such food.
+                         </P>
+                         <P>
+                            Female bears defend their cubs. If a female with cubs is
+                         surprised at close range or is separated from her cubs, she may
+                         attack.
+                         
+                         </P>
+                         <P>WHAT TO DO IF YOU SEE A BEAR 
+                         </P>
+                         <P>
+                            _ Make your presence known by talking loudly, clapping, singing
+                         or calling out. Whatever you do, make sure you are heard. It does
+                         not pay to surprise a bear.
+                         </P>
+                         <P>
+                            _ Keep children close at hand.
+                         </P>
+                         <P>
+                            _ There is no guaranteed minimum safe distance from a bear _ the
+                         farther, the better.
+                         </P>
+                         <P>
+                            _ If you are in a car, remain in your vehicle. Do not get out,
+                         even for a quick photo. Keep your windows up. Do not impede the
+                         bear from crossing the road.
+                          &UR; HOW TO ESCAPE FROM A BEAR &LR;  &QL;
+                         </P>
+                         <P>
+                            If a bear is threatening you:
+                         </P>
+                         <P>
+                            _ Lie still and quiet. Documented attacks show that an attack by
+                         a mother black bear often ends when the person stops fighting.
+                         </P>
+                         <P>
+                            _ Stay where you are. Don't try to climb a tree to escape. Black
+                         bears can climb trees easily and will come after you. The odds are
+                         that the bear will leave you alone if you stay put.
+                         </P>
+                         <P>
+                            _ If you are lying still and the bear attacks, strike back with
+                         anything you can. Go for the bear's eyes or its snout.
+                          
+                        </P>
+                        <P>SIDEBAR: HOW TO AVOID AN ATTACK
+                         </P>
+                         <P>
+                            _ Reduce or eliminate food odors from yourself, your camp, your
+                         clothes and your vehicle. Don't sleep in the same clothes you cook
+                         in.
+                         </P>
+                         <P>
+                            _ Store food so that bears cannot smell it or reach it. Do not
+                         keep food in your tent _ not even a chocolate bar.
+                         </P>
+                         <P>
+                            _ Properly store and dispose of all garbage.
+                         </P>
+                         <P>
+                            _ Handle and store pet food with as much care as your own.
+                         
+                        </P>
+                        <P>The publisher and authors of ``The WORST-CASE SCENARIO Survival
+                         Handbook'' disclaim any liability from any injury that may result
+                         from the use, proper or improper, of the information contained in
+                         this excerpt. All the information in this excerpt comes directly
+                         from experts in the situation at hand, but we do not guarantee that
+                         the information is complete, safe or accurate, nor should it be
+                         considered a substitute for your good judgment and common sense. 
+                         </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('336_7.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('336_7.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

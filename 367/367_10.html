@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Piracy" </h1>
+                <div>
+                    <h2> Water Pollution Caused by Sunken Boat Brought under Control </h2>
+                    <P>
+                            BEIJING, May 18 (Xinhua) -- Water pollution on east China's
+                            Bohai Sea, caused by leaking oil from a sunken fishing boat, has
+                            been brought under control, according to sources with the China
+                            Maritime Search and Rescue Center (CMSRC).
+                            </P>
+                            <P>
+                            The "Zhepuyuyou 31" boat was carrying 480-tons of engine oil
+                            when it collided in thick fog with a ship of an unidentified
+                            nationality in the early morning of May 1.
+                            </P>
+                            <P>
+                            The boat was seriously damaged in the middle part of its body,
+                            allowing the oil to leak.
+                            </P>
+                            <P>
+                            The boat's 11 crewmen escaped from the sinking boat after the
+                            collision, and were rescued by a nearby vessel.
+                            </P>
+                            <P>
+                            The rescue center asked its branches in Liaoning and Shandong
+                            provinces, which are closest to the spot, to recover the boat as
+                            soon as possible, after it was informed of the collision.
+                            </P>
+                            <P>
+                            But rescue work was delayed because of heavy fog. A Chinese
+                            Navy "631" submarine arrived at the spot on the afternoon of May
+                            1, and found that the fishing boat had sunk below the surface.
+                            </P>
+                            <P>
+                            The submarine also detected a two kilometer long and 200 meter
+                            wide oil slick near the spot, which continued to grow as oil
+                            poured out from the boat.
+                            </P>
+                            <P>
+                            About 15 ships and an airplane were mobilized by CMSRC to the
+                            spot, helping clean the oil floating on the surface of the
+                            sea. But there were many other ships and vessels sailing through
+                            the polluted waters nearby, hampering the clean-up operation.
+                            </P>
+                            <P>
+                            All of the located oil slicks have been cleaned, but the
+                            rescue vessels are trying to find whether there are other new oil
+                            slicks, in order to ensure all the polluted waters are cleaned.
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('../exit.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('../exit.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

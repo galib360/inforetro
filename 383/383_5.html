@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Mental Illness Drugs" </h1>
+                <div>
+                    <h2> MEDICATION FOR PROBLEM STUDENTS: POSSIBLE SOLUTION OR UNACCEPTABLE
+                            RISK?  </h2>
+                            <P>
+                                    DENVER _ As a debate over the growing use of behavioral drugs
+                                 for children intensifies across the country, the Colorado Board of
+                                 Education has passed a resolution meant to discourage teachers from
+                                 recommending prescription drugs like Ritalin and Luvox for
+                                 students.
+                                 </P>
+                                 <P>
+                                    The resolution carries no legal weight. But as the first of its
+                                 kind in the nation, it urges teachers and other school personnel to
+                                 use discipline and instruction to overcome problem behavior in the
+                                 classroom, rather than to encourage parents to put their children
+                                 on drugs that are commonly prescribed for attention deficit and
+                                 hyperactive disorders.
+                                 </P>
+                                 <P>
+                                    Proponents of the resolution, which passed by a 6-1 vote Nov.
+                                 11, said they were motivated, in part, by evidence that they said
+                                 suggests dozens of violent crimes in recent years, including the
+                                 massacre last spring at Columbine High School, were committed by
+                                 young people taking psychotropic drugs.
+                                 </P>
+                                 <P>
+                                    One of the teen-age shooters at Columbine, Eric Harris, had been
+                                 taking Luvox, an anti-depressant, although there is no evidence
+                                 that the drug had anything to do with the shootings.
+                                 </P>
+                                 <P>
+                                    No other states are considering a measure similar to the one in
+                                 Colorado, where an unusual set of circumstances played a role in
+                                 the resolution's passage: an elected and fairly conservative school
+                                 board responding, in part, to the outcry from one of the nation's
+                                 worst school shootings. But the resolution reflects broader issues,
+                                 as well, as parents, mental health professionals and school
+                                 officials around the country debate the rising use of behavioral
+                                 drugs for children.
+                                 </P>
+                                 
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('383_6.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('383_6.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

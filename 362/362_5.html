@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Human Smuggling" </h1>
+                <div>
+                    <h2> Four Poles convicted in major cigarette-smuggling case </h2>
+                    <P>
+                            COPENHAGEN, Denmark (AP) _ Four Poles were given sentences from
+                            18 to 24 months of prison in connection to one of the biggest
+                            cigarette-smuggling cases in Denmark, officials said Friday.
+                    </P>
+                    <P>
+                            The four men were convicted of taking part in smuggling 13
+                            million cigarettes from Poland to a storehouse in Danish city of
+                            Kalundborg.
+                    </P>
+                    <P>
+                            Cigarette-smuggling has become a major concern for Danish
+                            authorities. Cigarettes cost about dlrs 5 a pack in Denmark, making
+                            lower-priced smuggled smokes highly attractive.
+                    </P>
+                    <P>
+                            In 1997, Danish police seized a total of 18 million cigarettes,
+                            and in early 1998 police broke up a ring that had smuggled in some
+                            50 million cigarettes.
+                    </P>
+                   
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('362_6.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('362_6.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

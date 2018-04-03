@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Mental Illness Drugs" </h1>
+                <div>
+                    <h2> Schizophrenia, other diseases require much more than medicine </h2>
+                    <P>
+                            ``It's marked by a feeling of: `I don't belong,''' says
+                         psychologist Dennis O'Grady, who treats schizophrenics individually
+                         and works with SA. ```And you're telling me by how you're treating
+                         me that I am correct.'''
+                         </P>
+                         <P>
+                            Therapy helps schizophrenics see that the world isn't as
+                         threatening and dangerous as their instincts tell them, O'Grady
+                         says. It also can teach them how to cope with everyday stresses,
+                         says Bentley, ``how to think of alternatives rather than suicide.''
+                         </P>
+                         <P>
+                            From cooking to people skills, she says, the mentally ill need
+                         to learn life fundamentals that others take for granted. ``I don't
+                         know why society thinks if you're mentally ill, you can't learn
+                         anything. Nothing could be farther from the truth.''
+                         </P>
+                         <P>
+                            In recent months, NAMI has tried to make support and knowledge
+                         more available for those with psychoses by establishing what it
+                         calls COPE, for Caring, Outreach, Partnership and Education. The
+                         resource program, also directed toward family members, includes a
+                         consumer guide about patient empowerment, a housing guide, a family
+                         guide with productive ways of coping and a resource directory.
+                         </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('383_7.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('383_7.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Black Bear Attacks" </h1>
+                <div>
+                    <h2> BEARS BECOME UNCOMFORTABLY CLOSE NEIGHBORS IN NORTHERN NEW JERSEY  </h2>
+                    <P>
+                            STILLWATER, N.J. _ Danette Conroy was upstairs cleaning kitchen
+                         cabinets and her year-old daughter Kayleigh was asleep when the
+                         black bear somehow got into the ground floor of their new home.
+                         They never heard a thing until the crash of breaking glass. The
+                         bear, apparently startled by the arrival of Conroy's husband,
+                         Chris, had plunged through a double-paned window and stumbled away
+                         toward the woods.
+                         </P>
+                         <P>
+                            ``I've lived in Stillwater since I was age 4, and now I'm 41,''
+                         said Chris Conroy, a hunter, recalling what happened last summer.
+                         ``I've never ever, even seen a bear until about five years ago.''
+                         </P>
+                         <P>
+                            These days, everybody in this township of 4,500 on the slopes of
+                         the Kittatinny Mountains of northwestern New Jersey seems to know
+                         somebody with a bear story. Charlie McMahon raised goats as a hobby
+                         for 15 years until a bear killed two of them three years ago. Two
+                         weeks ago, at a Boy Scout camp in nearby Allamuchy, a bear yanked a
+                         sleeping bag _ with a teen-ager inside it _ off a bench; the youth,
+                         who was uninjured, screamed and frightened off the bear.
+                         </P>
+                         <P>
+                            And last summer, a bear broke up Diane Apostola's backyard
+                         barbecue for 20 relatives. ``He just came walking down like he was
+                         coming to the party with us,'' Apostola said. ``We all ran into the
+                         house, and he just left.''
+                         </P>
+                         <P>
+                            As the numbers of black bears and people have grown in forested
+                         areas of the New York region, the bears _ once timid and content
+                         with isolated lives in the woods _ are venturing more and more into
+                         campgrounds, yards and even houses in search of food. The place
+                         where their wanderings have caused the biggest stir is New Jersey;
+                         the state Division of Fish and Wildlife said it received 1,659
+                         complaints about bears last year, up from 285 in 1995.
+                         </P>
+                         <P>
+                            Most of the complaints were about bears roaming in backyards and
+                         getting into garbage and bird feeders, but 28 of them involved
+                         bears killing livestock and 29 were about bears getting into homes.
+                         Although none of the complaints involved bears attacking or
+                         injuring people, the intrusions have imposed anxieties and
+                         restrictions on life in this wooded corner of the state.
+                         </P>
+                         <P>
+                            The New Jersey Fish and Game Council will hold a public hearing
+                         Tuesday on its proposal to allow bear hunting this fall for the
+                         first time in 30 years. The council wants to reduce the state's
+                         bear population, now estimated at 1,000, to between 250 and 330 in
+                         the next three years in order to cut down on encounters between
+                         people and bears.
+                         </P>
+                         <P>
+                            ``We see this as a safety issue,'' said John W. Bradway,
+                         chairman of the council. ``Some people fear for their children's
+                         safety.''
+                         </P>
+                         <P>
+                            The hunting proposal, made last March, is opposed by 22 animal
+                         rights groups that want the state to do more to teach people to
+                         coexist with bears.
+                         </P>
+                         <P>
+                            ``There's no overpopulation problem,'' said Lynda Smith,
+                         director of one such group, the Bear Education and Resource Group
+                         of West Milford, N.J. ``If we cut off food in the neighborhoods,
+                         the bears won't come in.''
+                         </P>
+                         <P>
+                            But the animals have a keen sense of smell that can penetrate
+                         even the strongest barriers to food. Two summers ago, a black bear
+                         broke into Carolyn and Michael Ganon's home here by yanking an
+                         air-conditioner out of a window and crawling in through the hole _
+                         apparently seeking an uncovered canister of chocolate-covered
+                         toffee in the family room. Terrified, the couple's son, Leland, 13,
+                         ran upstairs and called 911. The police found the animal sitting
+                         near the Ganons' porch, calmly eating the candy.
+                         </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('336_6.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('336_6.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

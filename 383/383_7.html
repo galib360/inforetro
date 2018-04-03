@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1500">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Mental Illness Drugs" </h1>
+                <div>
+                    <h2> MEDICATION FOR PROBLEM STUDENTS: POSSIBLE SOLUTION OR UNACCEPTABLE
+                            RISK?  </h2>
+                            <P>
+                                    Experts in children's mental health issues point out that
+                                 children who take the drugs do so because they were having
+                                 difficulties to begin with. They acknowledge that impulsive or
+                                 violent behavior is a recognized side effect in a small percentage
+                                 of people taking the drugs.
+                                 </P>
+                                 <P>
+                                    But in arguing that an overwhelming majority of children who use
+                                 the drugs are benefiting, they contend that the Colorado resolution
+                                 is irresponsible and perhaps even dangerous in that it could lead
+                                 school personnel to ignore signs of serious mental disorders in
+                                 children and that it would discourage communication between
+                                 teachers and parents.
+                                 </P>
+                                 <P>
+                                    ``I hope what happened in Colorado is the exception and not the
+                                 rule,'' said Michael Faenza, president of the National Mental
+                                 Health Association, conceding that he fears other states and school
+                                 districts might replicate Colorado's efforts.
+                                 </P>
+                                 <P>
+                                    ``Holding up psychotropic medicines as the possible cause of
+                                 violent behavior is absurd. There's a wealth of information to show
+                                 that they have helped dramatically.''
+                                 </P>
+                                 <P>
+                                    The use of Ritalin and other psychotropic drugs has steadily
+                                 increased over the years among school-age children to a current
+                                 level of about 2.5 million, according to Children and Adults with
+                                 Attention Deficit/Hyperactivity Disorder, a national nonprofit
+                                 organization known as CHADD, which is based in Landover, Md.
+                                 </P>
+                                 <P>
+                                    Here in Colorado, increased usage has turned a new focus onto
+                                 the role that teachers and administrators play in the daily lives
+                                 of children who attend their schools. It has also pitted experts
+                                 who say use is growing because the drugs are beneficial against
+                                 those who contend that parents and teachers are too quick to seek
+                                 out prescription medicine as the simplest way to treat children
+                                 with behavioral problems.
+                                 </P>
+                                 <P>
+                                    Patti Johnson, the Colorado school board member who organized a
+                                 hearing on the issue and proposed the resolution, said that in the
+                                 five years she has served on the board, she has received ``numerous
+                                 complaints'' from parents who claimed a teacher had insisted that
+                                 their child go on Ritalin or another drug before returning to
+                                 class.
+                                 </P>
+                                 <P>
+                                    Recounting the case of one girl, who was showing signs of
+                                 attention deficit disorder through mood sweeps and napping in
+                                 class, Ms. Johnson said the girl was later diagnosed to be
+                                 suffering from hypoglycemia and just needed to change her diet.
+                                 According to the girl's parents, Ms. Johnson said, the teacher told
+                                 them, ``You need to get her a prescription for Ritalin.''
+                                 </P>
+                                 <P>
+                                    As a result, she said, a resolution was designed to remove
+                                 school personnel from any medical decisions. She said the board,
+                                 which consists of six Republicans and one Democrat, passed the
+                                 resolution along party lines with minimal debate. The lone
+                                 Democrat, Gully Stanford, did not return a telephone call. No other
+                                 versions of of the resolution were considered.
+                                 </P>
+                                 <P>
+                                    ``The resolution does not stop teachers from communicating with
+                                 parents,'' Ms. Johnson said in an interview. ``What it does do is
+                                 stop teachers from giving parents an ultimatum: `Put your kid on a
+                                 drug or we're not going to teach them.' That can't happen any more.
+                                 It's wrong.''
+                                 </P>
+                                 <P>
+                                    Brenda Welburn, executive director of the National Association
+                                 of State Boards of Education, said that Colorado's is one of only
+                                 seven elected state boards of education in the country and those
+                                 boards tend to be more ideological.
+                                 </P>
+                                 <P>
+                                    She added, however, ``I agree that too often the first answer
+                                 for children with some behavior problem is to reach for medication.
+                                 Some of the numbers we are seeing for medication of children are
+                                 staggering.''
+                                 </P>
+                                 <P>
+                                    Julie Underwood, general counsel of the National School Boards
+                                 Association, said she knew of no other school board examining the
+                                 question. She added that while many are concerned about
+                                 overmedication, ``We would be reluctant to support such a
+                                 resolution because there are children who may need such services,
+                                 who may benefit from the medication.''
+                                 </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('383_8.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('383_8.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

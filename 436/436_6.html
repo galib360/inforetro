@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Railway Accidents" </h1>
+                <div>
+                    <h2> 6 KILLED BY TRAIN WHILE SLEEPING ON TRACKS  </h2>
+                    <P>
+                            The train, which was carrying a variety of freight like scrap
+                         paper and metal automobile parts, was traveling from Houston to
+                         Brownsville, Texas, when the accident occurred about 3:15 a.m. near
+                         the tiny town of Norias, which is 60 miles north of Brownsville.
+                         </P>
+                         <P>
+                            Last year in Texas there were 38 fatalities and 80 injuries
+                         involving what railroad officials call ``trespass accidents,''
+                         Davis said, cases where people were struck on or near tracks or
+                         trying to get on a railroad car.
+                         </P>
+                         <P>
+                            Borrego said the last time he could remember a large group of
+                         illegal immigrants being killed on train tracks was in 1983 or 1984
+                         when 14 people were killed trying to cross a railroad trestle.
+                         </P>
+                         <P>
+                            Border Patrol officials along with Union Pacific officials
+                         caution illegal immigrants about sleeping on railroad tracks as
+                         part of general information they provide on the dangers of crossing
+                         the border.
+                         </P>
+                         <P>
+                            ``Sometimes they don't get the word,'' Borrego said. ``The
+                         conditions out here are rigid. You've got cactus, mesquite. It's no
+                         fun walking through the territory. They run out of water, they get
+                         bit by snakes.''
+                         </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('436_7.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('436_7.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

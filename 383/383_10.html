@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Mental Illness Drugs" </h1>
+                <div>
+                    <h2> MEDICATION FOR PROBLEM STUDENTS: POSSIBLE SOLUTION OR UNACCEPTABLE
+                            RISK?  </h2>
+                            <P>
+                                    Dr. Stephen Stahl, a professor of psychiatry at the University
+                                 of California in San Diego, said that because of the complexities
+                                 of mental disorders and the rapidly changing personalities of
+                                 children as they grow older, both sides of the psychotropic debate
+                                 may be right. And wrong.
+                                 </P>
+                                 <P>
+                                    ``There's no blood test for this,'' he said. ``It's not
+                                 objective. If a kid is acting out in class and a stimulant like
+                                 Ritalin calms him down, it would be immoral not to give him the
+                                 medicine.
+                                 </P>
+                                 <P>
+                                    ``But the problem comes,'' he added, ``when the stimulants don't
+                                 work and parents give them anyway as an excuse to avoid tough
+                                 decisions or talking with teachers and doctors to learn what's
+                                 going on.''
+                                 </P>
+                                 <P>
+                                    Another problem complicating the issue, Stahl said, is the
+                                 location of the school. Typically, he said, in poor areas, mental
+                                 disorders are underdiagnosed, and often in more affluent school
+                                 districts, children are overdiagnosed, sometimes making a bad
+                                 situation worse.
+                                 </P>
+                                 <P>
+                                    Besides complaints from parents about insistent teachers, Ms.
+                                 Johnson said she was also motivated to propose the resolution by
+                                 the violent crimes involving young people, in which investigators
+                                 said the perpetrators were using psychotropic drugs. Accounts of
+                                 those incidents also persuaded a Colorado state lawmaker, Penn
+                                 Pfiffner of Lakeland, to hold a separate hearing on the issue,
+                                 which, by coincidence, came two days before the school board voted
+                                 on Ms. Johnson's measure.
+                                 </P>
+                                 <P>
+                                    Dr. Peter Breggin, director of the International Center for the
+                                 Study of Psychiatry and Psychology, a nonprofit research
+                                 organization in Bethesda, Md., testified at both hearings and said
+                                 doctors have become too eager to prescribe psychotropic drugs at
+                                 the expense of conversations among parents, teachers and children
+                                 to learn why children are acting in anti-social ways.
+                                 </P>
+                                 <P>
+                                    ``It's a tremendous mistake to subdue the behavior of children
+                                 instead of tending to their needs,'' Breggin said in an interview.
+                                 </P>
+                                 <P>
+                                    ``We're drugging them into submission rather than identifying
+                                 and meeting the genuine needs of the family, the school and the
+                                 community. It's wrong in principle.''
+                                 </P>
+                                 <P>
+                                    Citing Harris and other young killers who were found to be
+                                 taking Ritalin and other drugs, Breggin said he is convinced that
+                                 there is a direct link between the drugs and violent acts. He also
+                                 asserted that the drug harms children.
+                                 </P>
+                                 <P>
+                                    CHADD executive director Matthew Cohen and others said the
+                                 resolution might inhibit teachers from applying their own common
+                                 sense and experience in the case of a troublesome child by merely
+                                 telling parents that something is wrong without offering a full
+                                 range of possible solutions.
+                                 </P>
+                                 <P>
+                                    ``If a child has hearing or vision problems that the teacher
+                                 identifies, we would expect the teacher to talk to the parents,''
+                                 said Jeanne Mueller Rohner, executive director of the Mental Health
+                                 Association of Colorado, which opposed the resolution. ``It should
+                                 be the same thing for mental health.''
+                                 </P>
+                                 <P>
+                                    Opponents of the measure also said they were uncomfortable with
+                                 the ardent support offered the measure by the Church of Scientology
+                                 through an affiliate organization, the Citizens Commission on Human
+                                 Rights. The president of its American branch, Bruce Wiseman, who
+                                 described the commission as a ``psychiatric watchdog group,''
+                                 testified at both hearings and urged rejection of Ritalin and other
+                                 drugs as a solution to troublesome behavior.
+                                 </P>
+                                 <P>
+                                    But Ms. Johnson, as well as Pfiffner, said the commission's
+                                 support was not a critical factor in any of their actions.
+                                 </P>
+
+                                 
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('../exit.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('../exit.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

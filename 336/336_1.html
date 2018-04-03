@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+        
+    <div id="body" style="padding: 30px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                         
+                    <h1>Topic: "Black Bear Attacks" </h1>
+        
+        
+                    <div>
+                        <h2> Boy Attacked by Bear at Scout Camp </h2>
+                        <P>
+                                SHELL LAKE, Wis. (AP) -- A black bear attacked a teen-age boy  
+                            Monday while he slept in a tent at a Boy Scout camp, seriously 
+                            injuring him. 
+                            </P>
+                            <P>
+                                Matthew Murphy, 14, was attacked at about 6:30 a.m. at the  
+                            Tomahawk Scout Reservation on the east side of Long Lake in 
+                            northwestern Wisconsin, authorities said. A search was on for the 
+                            bear, which will be destroyed if found. 
+                            </P>
+                            <P>
+                                Murphy was in serious but stable condition Monday night after  
+                            undergoing surgery. He had bite wounds to his head and shoulder 
+                            area and was expected to make a full recovery, the family said in a 
+                            news release. 
+                            </P>
+                            <P>
+                                Murphy's father, Anthony, a leader at the camp, used a rock and  
+                            a block of wood to drive the bear away after the animal had dragged 
+                            the boy and his tent about 78 feet into the woods. 
+                            </P>
+                            <P>
+                                Candy wrappers were found in the tent, but officials did not  
+                            know if that was related to the attack. 
+                            </P>
+                            <P>
+                                Ken Jonas, the wildlife biologist investigating the attack, said  
+                            the incident was extremely peculiar. 
+                            </P>
+                            <P>
+                                ``We normally don't get bears that attack people, and certainly  
+                            not in this manner,'' Jonas said. 
+                                         
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('336_2.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('336_2.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

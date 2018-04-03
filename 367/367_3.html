@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Piracy" </h1>
+                <div>
+                    <h2> Cambodia Denies Piracy Charges Against Soldiers </h2>
+                    <P>
+                            BANGKOK, September 27 (Xinhua) -- Cambodia denied that 11 of
+                            its soldiers had been engaged in piracy in Thai waters and
+                            dismissed piracy charges made against them by Thai authorities.
+                            </P>
+                            <P>
+                            The soldiers could not be charged with piracy because they were
+                            only carrying out their duties, Cambodia's Koh Kong Governor Rung
+                            Pramkesorn said, according to the local press today.
+                            </P>
+                            <P>
+                            The 11 Cambodian soldiers were arrested by the Thai Navy off
+                            Thailand's eastern coast on Sunday.
+                            </P>
+                            <P>
+                            The soldiers were reportedly seized along with their patrol
+                            boat by the Thai Navy after a brief clash off the eastern coastal
+                            province of Trat, when they were allegedly attempting to rob a
+                            Thai trawler.
+                            </P>
+                            <P>
+                            The Thai side said that the trawler was in Thai territorial
+                            waters and that the Cambodian soldiers would face charges of
+                            illegal entry, illegal possession and use of weapons, piracy,
+                            resisting arrest and illegal use of radio communication.
+                            </P>
+                            <P>
+                            However, the soldiers claimed that the Thai trawler was fishing
+                            in Cambodian waters.
+                            </P>
+                            <P>
+                            Governor Pramkesorn also accused the trawler of illegally
+                            fishing in Cambodian waters.
+                            </P>
+                            <P>
+                            The soldiers currently are detained at a police station in Trat
+                            province and they will soon be transferred to the Trat Prison.
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('367_4.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('367_4.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Radio Waves and Brain Cancer" </h1>
+                <div>
+ <h2> Govt: Researcher Faked Cancer Data </h2>
+<P>
+	SAN FRANCISCO (AP) -- A scientist whose 1992 study linking  
+high-voltage power lines to cancer contributed to public fears was 
+found to have faked his data and has left the Lawrence Berkeley 
+National Laboratory, the government said Friday. 
+</P>
+<P>
+	Richard P. Liburdy had claimed to have found a link between the  
+electromagnetic fields around power lines and certain cellular 
+changes in the body. 
+</P>
+<P>
+	After a whistle-blower complained, the federal Office of  
+Research Integrity investigated and concluded that Liburdy had 
+committed scientific misconduct by tossing out data that did not 
+support his conclusions, said the agency's director, Chris Pascal. 
+</P>
+<P>
+	``The evidence demonstrates Liburdy knew his data manipulations  
+were significant to the conclusions of the paper,'' the agency 
+said. 
+</P>
+<P>
+	Liburdy, a 51-year-old cellular biologist who lives in Tiburon,  
+outside San Francisco, resigned his 15-year position in March after 
+losing his funding, the San Francisco Chronicle said. 
+</P>
+<P>
+	In May, he agreed to ask the scientific journals that published  
+his work to retract three key graphs. Liburdy, who had received 
+$3.3 million in federal grants for his research, also agreed to a 
+three-year ban on receiving federal funds. 
+</P>
+<P>
+	However, in a letter in last month's issue of the journal  
+Science, he denied doing anything wrong other than failing to 
+explain his graphing procedures. 
+</P>
+<P>
+	``My scientific conclusions stand as published,'' Liburdy wrote.  
+``I admit no scientific wrongdoing. I could not afford a protracted 
+legal battle with the ORI, and a settlement was reached by which I 
+admit no liability.'' 
+</P>
+<P>
+	Three independent scientists who evaluated the facts at  
+Liburdy's request supported him, the Chronicle reported. 
+</P>
+<P>
+	Liburdy did not respond Friday to a request for comment faxed to  
+his home by The Associated Press. 
+</P>
+<P>
+	The possibility that electromagnetic fields can cause childhood  
+leukemia and other illnesses has raised fears among people living 
+near high-tension power lines. 
+</P>
+<P>
+	The theory had been raised well before Liburdy's study, but he  
+found what was thought to be the first plausible biological 
+explanation for such a connection. However, at least 20 subsequent 
+studies failed to find any conclusive link of the sort he 
+described. 
+</P>
+<P>
+	Some statistical studies that looked at the rate of cancer among  
+people living near power lines have indicated that it is more 
+common among those exposed to electromagnetic fields. 
+</P>
+<P>
+	But according to the National Institute of Environmental Health  
+Science, virtually all of the laboratory studies of animals and 
+humans ``fail to support a causal relationship.'' At the same time, 
+the agency has said that invisible fields created by power lines 
+``cannot be recognized as entirely safe.'' 
+</P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('310_5.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('310_5.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

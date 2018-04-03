@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Railway Accidents" </h1>
+                <div>
+                    <h2> 6 KILLED BY TRAIN WHILE SLEEPING ON TRACKS </h2>
+                    <P>
+                            HOUSTON _ Six people believed to be illegal immigrants from
+                         Mexico were hit and killed early Monday by a freight train as they
+                         slept on a desolate stretch of tracks in southern Texas. Officials
+                         said they believed the immigrants may have been victims of a
+                         superstition that the rails would keep them safe from snakes.
+                         </P>
+                         <P>
+                            ``There's a myth that if you sleep between the rails that snakes
+                         will not get you,'' said Mark Davis, a spokesman for Union Pacific.
+                         ``You go down the railroad tracks, you'll see snakes cut in half.''
+                         </P>
+                         <P>
+                            Davis said the driver of the train blew the whistle repeatedly
+                         when he noticed the people on the tracks. Although a couple of the
+                         victims raised their heads, no one got off the tracks. Davis said
+                         he was uncertain how far the train was from the victims when the
+                         driver saw them. But, he added, it would have taken a mile to stop
+                         the 105-car train, which was traveling between 45 and 49 miles an
+                         hour.
+                         </P>
+                         <P>
+                            The vast ranchlands of South Texas that stretch between the Rio
+                         Grande and San Antonio are among the most remote in the state, mile
+                         after mile of mesquite, prickly pear, citrus farms and grazing
+                         lands that are a prime avenue for illegal immigrants trying to make
+                         their way from the Mexican border to San Antonio or Houston.
+                         </P>
+                         <P>
+                            While illegal immigrants have been killed while sleeping on
+                         railroad tracks before, Fred Borrego, patrol agent in charge of the
+                         U.S. Border Patrol in Kingsville, said never had so many been
+                         killed in one accident. Between 2,000 and 3,000 illegal immigrants
+                         pass through his 2,600-square-mile patrol area each month, he said.
+                         </P>
+                         <P>
+                            The most recent victims, who were badly mutilated, have not been
+                         identified. They were taken to Corpus Christi where authorities
+                         will try to use fingerprints to determine their identity.
+                         </P>
+                         <P>
+                            Borrego had another possible explanation for the accident.
+                         </P>
+                         <P>
+                            ``Another theory I've been told is that in Mexico the trains
+                         don't run at night,'' Borrego said. ``They say they sleep up there
+                         because they feel a lot safer.''
+                         </P>
+                         <P>
+                            Although it seems implausible that people could sleep with the
+                         noise of a train running toward them, Davis said, ``a train
+                         operating when you're in front of it is very, very quiet.''
+                         </P>
+                         <P>
+                            The engine noise is primarily to the side, he said, and there is
+                         very little friction on the rail itself.
+                         </P>
+                         <P>
+                            ``I know its hard to believe,'' Borrego said. ``I've experienced
+                         this myself. If it's coming toward you it's as quiet as a cat.''
+                         </P>
+                         <P>
+                            But officials in the Kenedy County sheriff's office speculated
+                         that the hard traveling conditions confronted by the immigrants
+                         could also have played a role. The terrain in the area is very
+                         rugged, with most of it being brush covered.
+                         </P>
+                         <P>
+                            ``You think, `I'd never fall asleep there' or `Why wouldn't they
+                         wake up?''' said Hopy Alines, a secretary in the sheriff's office.
+                         ``But it just doesn't happen. These people travel three, four and
+                         five days without eating, without sleeping. They're just completely
+                         exhausted and they don't wake up.''
+                         </P>
+                         <P>
+                            Generally the illegal immigrants traveling through the county go
+                         unnoticed aside from the trail of odds and ends they leave behind,
+                         Ms. Alise said. ``You'll see empty bottles, sometimes bags of
+                         clothes,'' she said. ``We get a lot of calls where they break in
+                         and all they ever take is food and water.'' It is generally when
+                         people get sick or have problems that officials hear stories like
+                         the ones about people sleeping on the tracks.
+                         </P>
+
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('436_9.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('436_9.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

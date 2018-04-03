@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Law Enforcement, Dogs" </h1>
+                <div>
+                    <h2> Philippines, U.S. Strengthen Anti-narcotics Cooperation </h2>
+                    <P>
+                            MANILA, May 4 (Xinhua) -- The Philippines and the United States
+                            pledged Tuesday to strengthen their cooperation in curbing illegal
+                            drug trade by expanding their anti-narcotics campaign in the
+                            Philippines.
+                            </P>
+                            <P>
+                            This was learned from Presidential Spokesman Fernando Barican
+                            who was present at the meeting between Philippine President Joseph
+                            Estrada and U.S. Ambassador to the Philippines Thomas Hubbard at
+                            the Presidential Palace.
+                            </P>
+                            <P>
+                            "The president and the American ambassador agreed that U.S. and
+                            Philippine anti-drug authorities ought to explore innovative ways
+                            to curtail the drug trade," Barican said.
+                            </P>
+                            <P>
+                            He admitted during his regular press briefing that Hubbard had
+                            echoed Washington's concern that the Philippines had been used by
+                            foreigners running illegal drug syndicates, as a transshipment
+                            point of narcotics bound for the U.S.
+                            </P>
+                            <P>
+                            It is due to this concern, Barican said, that the U.S.
+                            ambassador had asked President Estrada "to address this kind of
+                            problem before it gets to such a stage that it becomes a serious
+                            concern."
+                            </P>
+                            <P>
+                            He stressed that although the Philippines has a wide coastline,
+                            making it an ideal transshipment point of goods bound for the
+                            U.S., the former has not been listed as among the top countries
+                            used as jump-off point for drugs that enter the American market.
+                            </P>
+                            <P>
+                            To address the problem of drug trafficking, Barican said the
+                            Presidential Palace "is considering the creation, in the long
+                            term, of a central unified civilian drug enforcement agency,
+                            patterned after the American model."
+                            </P>
+                            <P>
+                            The U.S. has the Drug Enforcement Agency (DEA) which is
+                            primarily tasked with tracking down the operations of illegal drug
+                            syndicates and effect the arrest of traffickers and
+                            narcotic-related offenders.
+                            </P>
+                            <P>
+                            Barican said such a move would be a long-term goal, as he
+                            explained that the creation of an agency similar to the DEA would
+                            require legislation, and the enactment of such laws by Congress,
+                            normally takes time. 
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('426_6.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('426_6.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

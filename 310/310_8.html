@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Radio Waves and Brain Cancer" </h1>
+                <div>
+<h2> S.Korean Scientists Discover Brain Cell Regenerator </h2>
+
+<P>
+SEOUL, January 4 (Xinhua) -- South Korean scientists have
+discovered a new substance that protects and regenerates brain
+cells in rats, raising hopes of fighting degenerative brain
+diseases, said a report in the latest issue of the "Journal of
+Neurochemistry."
+</P>
+<P>
+A research team at Seoul National University, led by Professor
+Suh Yoo-hun, has found that a chemical called dehydroevodiamine (
+DHED) extracted from natural herbs is efficient in deterring
+memory loss and preventing cerebral apoplexy from destroying brain
+cells during tests with rats.
+</P>
+<P>
+Its test also showed that the material can restore normal
+function to damaged brain nervous systems.
+</P>
+<P>
+"The research is in its early stages of development. But with
+this initial success, the prospects of curing a wide range of
+brain diseases have brightened," Suh said.
+</P>
+<P>
+Suh expects the material can be developed into a new medicine
+to prevent and cure human brain diseases caused by the loss of
+brain cells, such as Alzheimer's Disease, cerebral apoplexy and
+dementia.
+</P>
+<P>
+The scientists experimented with rats whose brain function was
+damaged by cerebral apoplexy.
+</P>
+<P>
+The rats' brain function markedly improved seven days after
+introducing the substance.
+</P>
+<P>
+The team has almost completed testing with animals on the
+material's effectiveness and toxicity and plans to follow up with
+pre-clinical experiments by the end of April this year. 
+</P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('310_9.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('310_9.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

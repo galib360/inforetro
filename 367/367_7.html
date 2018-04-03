@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Piracy" </h1>
+                <div>
+                    <h2> Sanderson Toss Olympic Qualifying Mark </h2>
+                    <P>
+                            LONDON, May 18 (Xinhua) -- Britain's Tessa Sanderson, javelin
+                            gold medalist at the 1984 Los Angeles Olympics, returned to the
+                            field Saturday from a four-year retirement, achieved an Olympic
+                            qualifying standards for Atlanta.
+                            </P>
+                            <P>
+                            The 40-year-old threw 58.18 meters with her first effort -- the
+                            best results any British woman had managed since last year. And
+                            her second toss was even further 60.64.
+                            </P>
+                            <P>
+                            Sanderson went beyond the standard of 60.00 with two more of
+                            her six throws in the International event in Bedford of England.
+                            </P>
+                            <P>
+                            She won the competition in cold conditions and broke the World
+                            Best mark for her age group by more than eight meters.
+                            </P>
+                            <P>
+                            Sanderson has come back in a bid to reach the Olympics for a
+                            record-equalling sixth time.
+                            </P>
+                            <P>
+                            The 1984 champion is also trying to raise one million pounds
+                            (1.5 dollars) for the Children In Hospital Charity. 
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('367_8.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('367_8.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

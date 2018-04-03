@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Piracy" </h1>
+                <div>
+                    <h2> S. Leone Hits Hard at Piracy</h2>
+                    <P>
+                            FREETOWN, January 6 (Xinhua) -- Five government soldiers
+                            arrested by the Sierra Leone Naval Patrol Unit early November
+                            last year have been jailed for 10 years each with hard labor,
+                            Justice Ministry officials said today.
+                            </P>
+                            <P>
+                            The soldiers who were sentenced to jail on Saturday had
+                            attacked a Spanish fishing boat offshore Freetown, capital of
+                            Sierra Leone, according to the officials.
+                            </P>
+                            <P>
+                            "We are now determined to stamp out piracy and make the
+                            country's territorial waters safe," one official said.
+                            </P>
+                            <P>
+                            According to the ministry's statistics, piratical attacks for
+                            the past three years on fishing boats plying the country's
+                            coastal waters have increased five fold to about an average of
+                            four a month, with the highest falling in the month of November
+                            last year.
+                            </P>
+                            <P>
+                            Naval Commander Alimamy Sesay in an interview said, "stiffer
+                            penalties should be given to pirates as from now on."
+                            </P>
+                            <P>
+                            Last September, Spanish and Canary Island boat owners
+                            protested to Sierra Leone over what they called "the high
+                            incidence of piracy and they threatened to withdraw their boats
+                            from Sierra Leone if the government does not step up the battle
+                            against piracy."  
+                            </P>
+                            </TEXT>
+                            </BODY>
+                            </DOC>
+                            
+                            
+                            <DOC>
+                            <DOCNO> XIE19970107.0030 </DOCNO>
+                            <DATE_TIME> 1997-01-07 </DATE_TIME>
+                            <BODY>
+                            <HEADLINE> S. Leone Hits Hard at Piracy </HEADLINE>
+                            <TEXT>
+                            <P>
+                            FREETOWN, January 6 (Xinhua) -- Five government soldiers
+                            arrested by the Sierra Leone Naval Patrol Unit early November
+                            last year have been jailed for 10 years each with hard labor,
+                            Justice Ministry officials said today.
+                            </P>
+                            <P>
+                            The soldiers who were sentenced to jail on Saturday had
+                            attacked a Spanish fishing boat offshore Freetown, capital of
+                            Sierra Leone, according to the officials.
+                            </P>
+                            <P>
+                            "We are now determined to stamp out piracy and make the
+                            country's territorial waters safe," one official said.
+                            </P>
+                            <P>
+                            According to the ministry's statistics, piratical attacks for
+                            the past three years on fishing boats plying the country's
+                            coastal waters have increased five fold to about an average of
+                            four a month, with the highest falling in the month of November
+                            last year.
+                            </P>
+                            <P>
+                            Naval Commander Alimamy Sesay in an interview said, "stiffer
+                            penalties should be given to pirates as from now on."
+                            </P>
+                            <P>
+                            Last September, Spanish and Canary Island boat owners
+                            protested to Sierra Leone over what they called "the high
+                            incidence of piracy and they threatened to withdraw their boats
+                            from Sierra Leone if the government does not step up the battle
+                            against piracy."  
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('367_6.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('367_6.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

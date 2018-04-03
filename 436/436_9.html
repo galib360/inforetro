@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Railway Accidents" </h1>
+                <div>
+                    <h2>  CSX Rail System Found Dangerous  </h2>
+                    
+                         <P>
+                            Two such wide areas were found in the District of Columbia on
+                         the line used by Amtrak, Virginia Railway Express and all
+                         north-south CSX freight trains. The defects were repaired
+                         immediately after they were found.
+                         </P>
+                         <P>
+                            Defects were also found in Florida, Pennsylvania and Maryland
+                         </P>
+                         <P>
+                            Two of three recent track-caused derailments were caused by wide
+                         track, including a minor derailment of Amtrak's Chicago-Washington
+                         Capitol Limited at Connellsville, Pa., on Jan. 30, the report said.
+                         </P>
+                         <P>
+                            George Gavalla, the agency's associate administrator for safety,
+                         said he worried about the type of defects inspectors found.
+                         </P>
+                         <P>
+                            ''When you look at the nature of the defects, these are
+                         conditions that should not exist on any Class One (major)
+                         railroad,'' Gavalla told the Post. ''We will not tolerate wide
+                         gauge on any railroad.''
+                         </P>
+                         <P>
+                            CSX President Ronald Conway called the conditions
+                         ''unacceptable.''
+                         </P>
+                         <P>
+                            ''Whatever is necessary to do, we'll do,'' he said.
+                         </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('436_10.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('436_10.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

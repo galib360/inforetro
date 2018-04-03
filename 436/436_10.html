@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Railway Accidents" </h1>
+                <div>
+                    <h2> New S.F. Cable Car Introduced  </h2>
+                    <P>
+                            SAN FRANCISCO (AP) -- They just don't make cable cars like they
+                         used to -- except, of course, in San Francisco.
+                         </P>
+                         <P>
+                            Working from dog-eared blueprints and plans kept only in their
+                         heads, four carpenters spent 3,000 hours making a brand-new cable
+                         car that's set to hit the rails Monday.
+                         </P>
+                         <P>
+                            The new, green and white No. 9 car was crafted by hand, from its
+                         bronze-alloy bell to its Alaskan cedar roof. It will carry its
+                         first passengers exactly 100 years after the death of the father of
+                         cable cars, Andrew Hallidie.
+                         </P>
+                         <P>
+                            One hundred also is the car's life expectancy because the San
+                         Francisco cable cars are so solid, made almost entirely of oak, and
+                         are so painstakingly maintained.
+                         </P>
+                         <P>
+                            ''I think the number one reason they last longer than street
+                         cars is that they're hand made,'' says 45-year-old Bob Harris, a
+                         carpenter who has crafted cable cars for 22 years. ''There's
+                         special care in everything. Plus, they have no motor parts to wear
+                         out.''
+                         </P>
+                         <P>
+                            San Francisco's first cable cars started wearing out in the
+                         1980s, and the Municipal Railway workshop has been crafting new
+                         ones just about every other year.
+                         </P>
+                         <P>
+                            According to the San Francisco Cable Car museum, Hallidie
+                         hatched upon the innovative idea of making street cars that grab
+                         constantly moving underground cables for power after seeing a
+                         horse-drawn streetcar accident in 1869 in which five horses were
+                         killed.
+                         </P>
+                         <P>
+                            In the following years, cable car systems bloomed in cities all
+                         over the world, only to be eclipsed in the 1940s by electrical
+                         street cars, subways and buses. While San Francisco's routes shrank
+                         to just two -- crisscrossing the hilly city on the California and
+                         Powell lines -- the cable car and its clanging bell has become a
+                         city landmark.
+                         </P>
+                         <P>
+                            Locals tend to shy away from the cable cars since the admission
+                         price is double that of buses, but tourists line up by the hundreds
+                         for the thrill of hanging perilously off a lurching, old-fashioned
+                         machine.
+                         </P>
+                         <P>
+                            According to legend, the original blueprints were destroyed in
+                         the fires that followed the 1906 earthquake, and since then
+                         craftsmen have been drawing up patterns on the fly and passing the
+                         craft down through the generations.
+                         </P>
+                         <P>
+                            ''We have bits and pieces of plans, but a lot of it is just in
+                         the carpenters' heads,'' says Harris. ''It's like putting a puzzle
+                         back together. That's what I really like about working here, it's
+                         such a challenge.''
+                         </P>
+                         <P>
+                            Each 7-ton car costs about $275,000. Constant maintenance is
+                         needed to replace the wooden brake shoes and grips that grab the
+                         underground cable, which moves at a constant speed of 9 mph. Both
+                         the shoes and grips are crafted at the Municipal Railway workshop
+                         and must be replaced every three days.
+                         </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('../exit.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('../exit.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

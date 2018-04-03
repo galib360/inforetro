@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+
+    
+
+
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Railway Accidents" </h1>
+                <div>
+                    <h2> GUN MAKERS' APPROACH TO BASIC SAFETY FEATURE VARIES WIDELY </h2>
+
+                    <P>
+                            It is one of most common gun accidents: A person picks up a
+                         semiautomatic pistol, takes out the magazine containing the
+                         cartridges and, thinking the weapon is empty, squeezes the trigger
+                         and shoots himself or someone else.
+                         </P>
+                         <P>
+                            When a semiautomatic's magazine is removed, a round can remain
+                         in the chamber, ready to be fired, and scores of people, from
+                         adults cleaning guns to children playing with them, have died or
+                         been seriously hurt in recent years as a result.
+                         </P>
+                         <P>
+                            Gun producers have long known of the danger, and some have
+                         responded by building into their guns an inexpensive mechanism
+                         known as a magazine safety. But the fact that many gun makers have
+                         chosen not to use simple devices like magazine safeties and gun
+                         locks is now a focus of a growing wave of lawsuits in which cities
+                         are accusing the firearms industry of making guns needlessly
+                         dangerous.
+                         </P>
+                         <P>
+                            A look at how gun makers have chosen to use, or not use, the
+                         magazine safety provides a glimpse into an industry driven by
+                         unique marketing forces. In the absence of government safety
+                         regulation, different companies set their own standards, and
+                         producers have not sought independent answers about safety issues
+                         or been able to reach internal consensus on them.
+                         </P>
+                         <P>
+                            For decades, the nation's biggest gun maker, Smith &AMP; Wesson, has
+                         incorporated a magazine safety, a mechanism made of a few springs
+                         and a lever that can cost as little as 9 cents, in virtually every
+                         semiautomatic pistol it sold to the public. Other companies have
+                         never used one.
+                         </P>
+                         <P>
+                            Beretta uses the device in a few models but not others. Some
+                         manufacturers offer it as an option to law enforcement but not to
+                         the public. One manufacturer stamps a warning about the firing
+                         danger onto a pistol. Another puts a caution sticker on the
+                         magazine. Others say nothing on the gun.
+                         </P>
+                         <P>
+                            Gun makers have a simple response to questions about the
+                         magazine safety, as well as the safety lawsuits: People know that
+                         guns are dangerous, gun owners need training, and they need to keep
+                         weapons away from children. Faced with the prospect of federal
+                         regulation, gun makers recently began to distribute safety locks,
+                         but both the industry and groups like the National Rifle
+                         Association oppose mandatory safety requirements.
+                         </P>
+                         <P>
+                            ``We leave it up to each individual company to manufacture what
+                         they think is the safest, highest quality product as they see fit
+                         and leave it to the consumer to buy the gun that best fits their
+                         needs,'' said Andrew Kelley, a spokesman for Sporting Arms and
+                         Ammunition Manufacturers Institute, a trade group in Newtown, Conn.
+                         </P>
+                         <P>
+                            For every gun maker that cites safety as a reason for using the
+                         magazine device, another contends it could make a gun less
+                         reliable. Other consumer industries form internal task forces to
+                         resolve such debates, or refer them to independent technical
+                         groups, such as Underwriters Laboratories Inc., which have set
+                         standards for products from children's pajamas to hair dryers.
+                         </P>
+                         <P>
+                            But while the gun industry's group, the Sporting Arms and
+                         Ammunition Institute, has set technical standards for bullets, it
+                         has not researched the value of internal safety devices like the
+                         magazine safety, Kelley said.
+                         </P>
+                         <P>
+                            There is little question that some accidental shooting deaths
+                         could be prevented if gun owners handled and stored their weapons
+                         more safely. And such deaths have fallen steadily over the last two
+                         decades.
+                         </P>
+                         
+            
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('436_3.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('436_3.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

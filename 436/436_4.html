@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Railway Accidents" </h1>
+                <div>
+                    <h2> Widespread Rail Track Defects Found </h2>
+                    <P>
+                            WASHINGTON (AP) -- CSX Transportation announced an internal
+                         review of its track maintenance Friday after federal railroad
+                         inspectors found deteriorating conditions in its system used by
+                         passenger, freight and commuter trains up and down the East Coast.
+                         </P>
+                         <P>
+                            The Federal Railroad Administration had begun a special safety
+                         audit of the railroad in February after a series of derailments.
+                         </P>
+                         <P>
+                            George Gavalla, associate administrator for safety, said the
+                         agency audited CSX in 1997 and became concerned because it hadn't
+                         seen a reduction in derailments and other problems.
+                         </P>
+                         <P>
+                            John W. Snow, chairman and chief executive officer of CSX
+                         Corporation, responded that his company ''has repaired or is in the
+                         process of repairing all of the defects identified in the report.
+                         Where work is in progress, operations have been modified to ensure
+                         safe movement of trains.''
+                         </P>
+                         <P>
+                            The company said Snow will personally head an internal company
+                         review of all track maintenance and improvement programs.
+                         </P>
+                         <P>
+                            ''The main concern,'' Gavalla said in a telephone interview,
+                         ''was the lack of quality control in CSX track inspection
+                         maintenance programs.'' He said the railroad has promised to
+                         initiate safety programs that go beyond federal standards.
+                         </P>
+                         <P>
+                            Problems were found in track conditions used by Amtrak and
+                         commuter rail lines and in one case insufficient repairs were made
+                         following a derailment, Gavalla said.
+                         </P>
+                         <P>
+                            The audit found a 60 percent increase in track-caused accidents
+                         over five years on the 22,700-mile system, according to a report in
+                         The Washington Post.
+                         </P>
+                         <P>
+                            The review found many instances in which the distance between
+                         the rails had spread wide enough to risk derailments.
+                         </P>
+                         <P>
+                            Two such wide areas were found in the District of Columbia on
+                         the line used by Amtrak, Virginia Railway Express and all
+                         north-south CSX freight trains. The defects were repaired
+                         immediately after they were found.
+                         </P>
+                         <P>
+                            Defects were also found in Florida, Pennsylvania and Maryland
+                         </P>
+                         <P>
+                            Two of three recent track-caused derailments were caused by wide
+                         track, including a minor derailment of Amtrak's Chicago-Washington
+                         Capitol Limited at Connellsville, Pa., on Jan. 30.
+                         </P>
+                         <P>
+                            Federal safety standards dictate conditions for railroad track
+                         including the gauge, or distance between tracks. Railroads are
+                         supposed to inspect their tracks twice a week and, when a problem
+                         is found, either make immediate repairs or slow traffic over the
+                         area until it can be fixed.
+                         </P>
+                         <P>
+                            The special safety audit is not a rare event, Gavalla said. ''We
+                         always have inspectors on every railroad virtually every day.''
+                         </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('436_5.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('436_5.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

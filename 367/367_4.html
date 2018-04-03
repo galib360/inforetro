@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Piracy" </h1>
+                <div>
+                    <h2> China Punishes Three CD Manufacturers </h2>
+                    <P>
+                            BEIJING, June 11 (Xinhua) -- China has suspended the
+                            reproduction licences of two CD factories, accusing them of piracy
+                            and fining them each 200,000 yuan (about 24,096 US dollars).
+                            </P>
+                            <P>
+                            Officials with the Press and Publication Administration and the
+                            State Copyright Bureau said this move serves to show the Chinese
+                            government's sincere effort to fight piracy and protect
+                            intellectual property rights.
+                            </P>
+                            <P>
+                            According to the officials, the Chaoyang Jinfa CD Company and
+                            Zhongshan Yisheng CD Company, both in Guangdong Province, were
+                            engaged in reproducing pirated and pornographic CDs.
+                            </P>
+                            <P>
+                            These reproductions were in serious violation of China's
+                            efforts to preserve intellectual property rights and caused severe
+                            negative impact, the official said.
+                            </P>
+                            <P>
+                            And the Jindie Technology Company in Guangxi Zhuang Autonomous
+                            Region, which imported two production lines to reproduce pirated
+                            and pornographic CDs without permission from the Press and
+                            Publication Administration, also was ordered to suspend the
+                            duplication business.
+                            </P>
+                            <P>
+                            Since late last year, China has suspended licences of seven
+                            other CD manufacturers for piracy.  
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('367_5.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('367_5.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

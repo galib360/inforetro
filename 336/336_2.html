@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+
+    
+
+
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1200">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Black Bear Attacks" </h1>
+                <div>
+                    <h2> Russian bear orphanage weans its cubs with `tough love' </h2>
+
+<P>
+        BUBONIDZE, Russia (AP) _ Bear hunting season in Russia opened
+        Aug. 1, and it might seem an inauspicious time to release two
+        motherless bear cubs into the wild.
+</P>
+<P>
+        But father-and-son gamekeepers Valentin and Sergei Pazhetnov are
+        former hunters, and they specialize in training bear orphans to
+        survive all the dangers of Russia's deep forests, especially
+        predators on two legs.
+</P>
+<P>
+        The sister cubs, Prima and Dina, were found by a game warden in
+        April. Apparently, a woman had disturbed their den, provoking an
+        attack by the mother bear which then ran off and abandoned the
+        3-month-old cubs.
+</P>
+<P>
+        For four months, they have lived at the bear orphanage that the
+        Pazhetnov family runs as part of an animal sanctuary in Bubonidze,
+        a remote settlement 450 kilometers (280 miles) west of Moscow.
+              
+</P>
+<P>
+        With the help of international donations, the Pazhetnovs have
+        raised and released 64 bear orphans in the last eight years. The
+        facility is the only one of its type in Russia.
+</P>
+<P>
+        What sets it apart is that the regimen is not warm and friendly.
+Here, the bears are taught with ``tough love,'' and contact with
+humans is kept to a minimum. Any gesture of friendliness by the
+bears is met with a swift slap on a tender nose.
+</P>
+<P>
+        The reason? Bear cubs raised by humans often become too
+trusting, even running up to hunters as if to make friends. So
+Valentin, who studied animal behavior at Moscow State University,
+has developed a program to care for young bears without letting
+them get too attached.
+</P>
+<P>
+        What they're doing is making sure these bears retain their
+biological fear of humans,'' says Simon Pope of the Britain-based
+International Fund for Animal Welfare, which helps finance the
+orphanage.
+</P>
+<P>
+        However, affection flows freely in the other direction.
+	   ``It's exactly the same emotion as if our children had left
+home,'' says Sergei. ``We looked after them for so long and now
+we've released them. But I'm sure they'll survive.''
+</P>
+<p>
+	   Bears are plentiful in Russia, and hunting is considered part of
+the national heritage.
+</p>
+<p>
+	   Soviet leaders like Nikita Khrushchev and Leonid Brezhnev showed
+off their prowess with a hunting rifle in front of visiting
+dignitaries. And there were only a few voices of protest last year
+when then Prime Minister Viktor Chernomyrdin killed a bear and her
+cubs on a hunting trip.
+</p>
+<p>
+	   Ironically, most cubs are brought to the orphanage by hunters
+who have killed a mother bear. Female bears tend to stay in their
+lairs in January when nursing their cubs, making them sitting
+targets.
+</p>
+<p>
+
+	   Cubs younger than 3 months have little sight, hearing or sense
+of smell, and they can live inside the wooden cottage with Valentin
+and his wife, Svetlana.
+</p>
+<p>
+	   But once their senses are active, they are moved to an enclosure
+deep in an animal sanctuary where they can learn to climb trees,
+dig dens and scavenge for food.
+</p>
+<p>
+	   The Pazhetnovs provide food and veterinary care, but limit
+contact as much as possible, touching the bears only with gloves
+and rebuffing any overtures of friendship.
+</p>
+<p>
+	   After four months, Valentin decided the cubs Prima and Dina were
+ready to return to the woods. Even though bear season is open, most
+hunters wait until winter when it's easier to find bears in their
+dens. So the cubs will have a few months to get used to being on
+their own, dig a den and settle in for winter.
+</p>
+<p>
+	   The cubs, sedated for the car trip, are tagged on the ear and
+then awakened when they reach an area near their former den. As
+they amble off, they pause for a moment, their heads poking above
+the tall grass, and look back toward the humans.
+</p>
+<p>
+	   But just briefly. Within moments, their brown coats fade into
+the darkness among the trees.
+</p>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('336_3.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('336_3.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

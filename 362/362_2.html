@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+
+    
+
+
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Human Smuggling" </h1>
+                <div>
+                    <h2> Police fear Chinese underworld gangs thriving in Japan </h2>
+
+<P>
+        TOKYO (AP) _ Chinese gangs are a growing threat in Japan,
+        smuggling illegal workers into Japan and carrying out auto theft,
+        credit-card fraud, muggings and other crimes, police say.
+</P>
+<P>
+        Concern over the presence of Chinese underworld gangs has been
+        heightened by a string of recent arrests.
+</P>
+<P>
+        In one, a 40-year-old Chinese man arrested in late June on
+        charges of violating immigration laws is a suspected leader of the
+        ``Shanghai mafia,'' based in Tokyo's seedy Kabukicho area, the
+        Yomiuri newspaper reported Monday.
+</P>
+<P>
+        The Shanghai mafia is divided into smaller groups, each
+specializing in a criminal activity, including thefts, kidnappings
+and passport forgery, the report said.
+</P>
+<P>
+        One such group tampered with machines for pachinko, or Japanese
+pinball, so players could win more money, it said.
+</P>
+<P>
+        Police refused to comment on that report, but acknowledge they
+have reason to be concerned.
+</P>
+<P>
+        Crimes by foreigners in Japan have climbed nearly fivefold in
+the last five years, from 4,277 in 1992 to 19,128 last year,
+according to a recent report by the National Police Agency.
+</P>
+<P>
+        The report, called ``The Quiet Invasion of International
+Organized Crime,'' said Chinese gangs are suspected of engineering
+much of the smuggling of those seeking better-paying jobs, running
+the operation as a lucrative and relatively safe business.
+</P>
+<P>
+        It said they charge about 4 million yen (dlrs 28,000) a head.
+	   Last week, the Japanese Coast Guard found 98 suspected illegal
+immigrants, all believed to be Chinese, hidden in a sweltering
+container on board a freighter from Hong Kong.
+</P>
+<P>
+        Reports of such stowaways have grown increasingly common.
+	   Osamu Ishida, a Tsukuba Women's University professor who has
+written books about the Chinese mafia in Japan, says their
+influence is swelling.
+</P>
+<P>
+        ``This is not something that's happening far, far away. It's
+        going on right next-door in our neighborhoods,'' he said in a
+        telephone interview.
+</P>
+<P>
+        Ishida estimated the number of Chinese gangs living and working
+in Japan in the thousands, perhaps totaling 10,000 or 20,000.
+</P>
+<P>
+        ``The Chinese gangs see Japan as the final uncultivated mass
+market, after the United States, Canada, Australia and Europe,'' he
+said.
+</P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('362_3.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('362_3.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

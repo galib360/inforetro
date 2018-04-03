@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+        
+    <div id="body" style="padding: 30px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                         
+                    <h1>Topic: "Piracy" </h1>
+        
+        
+                    <div>
+                        <h2> One Million-strong Anti-Piracy Campaign </h2>
+                        <P>
+                                BEIJING, May 16 (Xinhua) -- A nationwide campaign to collect
+                                one million signatures was begun here today by the China Software
+                                Alliance (CSA), an alliance of 12 major Chinese software
+                                producers, to promote awareness of protecting intellectual
+                                property rights of software.
+                                </P>
+                                <P>
+                                The program is to last in 44 cities until the end of the year.
+                                </P>
+                                <P>
+                                Chen Chong, deputy director of China's Ministry of Electronics
+                                Industry, said that China has a system of laws protecting
+                                intellectual property rights and has made great advances in this
+                                field.
+                                </P>
+                                <P>
+                                The anti-piracy campaign will have a great influence on the
+                                Chinese and will provide a sound environment for software
+                                developers, Chen said.
+                                </P>
+                                <P>
+                                China adopted its Copyright Law, which listed software as one
+                                of the key intellectual products to be protected, in 1991, and
+                                passed the Computer Software Protection Regulations in the same
+                                year.
+                                </P>
+                                <P>
+                                It is vital for China to develop its software industry as
+                                quickly as possible, because the country is in urgent need of new,
+                                high-tech products to improve its industries, Chen noted.
+                                </P>
+                                <P>
+                                A manager of the Lianbang Software Company in Beijing, which
+                                sells more than 3,000 types of domestic and foreign software, said
+                                that the crackdown on pirated software has proven to be good.
+                                </P>
+                                <P>
+                                His company's daily sales volume this year doubled after the
+                                crackdown, and is up from last year's 50,000 yuan to 100,000 yuan
+                                daily. 
+                                </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('367_2.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('367_2.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Human Smuggling" </h1>
+                <div>
+                    <h2> Eight people found dead in container on ship </h2>
+                    <P>
+                            TOKYO (AP) _ Eight people were found dead Monday in a cargo
+                            container aboard a freighter that arrived in a Tokyo port from
+                            China, the coast guard said.
+                    </P>
+                    <P>
+                            Officials believe the eight _ seven women and one man _ died of
+                            dehydration and that they were Chinese who had been trying to enter
+                            Japan illegally, said Maritime Safety Agency spokesman Takeshi
+                            Noda.
+                    </P>
+                    <P>
+                            They were discovered aboard the St. Vincent and the
+                            Grenadines-registered Goldrich River, which left the Chinese port
+                            of Dalian last week and arrived in Tokyo's Ohi pier Monday with a
+                            cargo of artificial flowers. </P>
+                    <P>
+                            Eight others found in the container were suffering from severe
+                            dehydration and taken to a hospital. Their condition was not
+                            immediately known, Noda said.
+                    </P>
+                    <P>
+                            He said police searched the ship after coast guards were
+                            informed stowaways may be aboard the ship.
+                    </P>
+                    <P>
+                            The Goldrich River is owned by Goldrich Shipping Ltd. of Hong
+                            Kong and operated by Japan's Kawasaki Kisen.
+                    </P>
+                    <P>
+                            Last year, police arrested 7,117 foreigners, including 3,045
+                            Chinese for trying to enter Japan illegally, nearly a fifty percent
+                            rise from 1996, according to the immigration office.
+                    </P>
+                    
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('362_4.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('362_4.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

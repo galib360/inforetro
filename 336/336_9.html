@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Black Bear Attacks" </h1>
+                <div>
+                    <h2> Boy Attacked by Bear at Scout Camp </h2>
+                    <P>
+                            SHELL LAKE, Wis. (AP) -- A black bear attacked a 14-year-old boy  
+                        at a Boy Scout camp, dragging him into the woods and injuring him 
+                        before his father drove the animal off by pelting him with rocks 
+                        and wood. 
+                        </P>
+                        <P>
+                            Matthew Murphy, 14, had bite wounds to his head and shoulder  
+                        area and was in serious condition at a hospital after Monday's 
+                        attack. He is expected to make a full recovery, the family said. 
+                        </P>
+                        <P>
+                            A search was on for the bear, which will be destroyed if found.  
+                        </P>
+                        <P>
+                            The boy was attacked at 6:30 a.m. Monday at the Tomahawk Scout  
+                        Reservation on Long Lake in northwestern Wisconsin. 
+                        </P>
+                        <P>
+                            The bear dragged both boy and tent into the woods. The boy's  
+                        father, Anthony Murphy, threw a rock at the bear, which ran off but 
+                        then came after him. 
+                        </P>
+                        <P>
+                            The father then threw a block of wood at the bear, and it  
+                        climbed part up a tree, allowing the the boy to be rescued from the 
+                        tent. 
+                        </P>
+                        <P>
+                            Candy wrappers were found in the tent, but officials did not  
+                        know if that was related to the attack. 
+                        </P>
+                        <P>
+                            Ken Jonas, the wildlife biologist investigating the attack, said  
+                        the incident was peculiar: ``We normally don't get bears that 
+                        attack people, and certainly not in this manner.'' 
+                        </P>
+                        <P>
+                            Wildlife wardens on Monday patrolled the camp to protect the 800  
+                        campers, many from Minnesota and Wisconsin. Camp fires were also 
+                        lit for the night. 
+                        </P>
+                        <P>
+                            The camp has gotten about 40 calls from concerned parents, but  
+                        no requests to pull children from the camp, said Jeff Sulzbach, 
+                        director for Tomahawk Scout Reservation. 
+                        </P>
+                        <P>
+                            Bear populations have increased to about 14,000 in Wisconsin,  
+                        from the 5,850 estimated to be in the state in 1985. 
+                                     
+                        </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('336_10.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('336_10.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

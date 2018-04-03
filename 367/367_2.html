@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+
+    
+
+
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Piracy" </h1>
+                <div>
+                    <h2> Pirates Threaten Fisheries in Lake Victoria </h2>
+
+                    <P>
+                            KAMPALA, August 21 (Xinhua) -- Rampant marauding threatens the
+                            fisheries in Lake Victoria, the New Vision newspaper reported
+                            today.
+                            </P>
+                            <P>
+                            The exact number and composition of the gang is to be
+                            established, but the newpaper said the ring consisted of heavily
+                            armed ugandan, tanzanian and some Kenyan criminals.
+                            </P>
+                            <P>
+                            The gang act in collaboration with the islanders of the three
+                            countrias, it said.
+                            </P>
+                            <P>
+                            In the latest swoop, the pirates hit Lolwe Island in
+                            southeastern Uganda, looting properties worth millions of
+                            shillings, and then headed for islands in Kenyan waters.
+                            </P>
+                            <P>
+                            Kizito Mboli, a resigned boat owner, said that the pirates
+                            target boat engines, nets, cash and even lives of fishermen.
+                            </P>
+                            <P>
+                            "Police do not respond or come too late" on the criminal
+                            report, Mboli complained.
+                            </P>
+                            <P>
+                            Meanwhile, the gang has its own warning network, an
+                            unidentified source told the newspaper.
+                            </P>
+                            <P>
+                            But Ugandan Police Chief Spokesman said that they have
+                            deployed police marine boats to patrol the waters and asked
+                            Kenyan counterparts to intensify patrols.
+                            </P>
+                            <P>
+                            The local residents in southeastern Uganda asked for combating
+                            the crime wave. enditem
+                            
+                            =08210851
+                            
+                            =08210847
+                            NNNN
+                            16:52 16:52 g # PAB
+                            </P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('367_3.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('367_3.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Radio Waves and Brain Cancer" </h1>
+                <div>
+<h2> Sepa Warns Against TV, Radio Radiation </h2>
+<P>
+BEIJING, May 8 (Xinhua) -- Radio and television have become
+another major source of urban pollution through the powerful
+impact of electromagnetic radiation, today's "China Daily"
+reported.
+</P>
+<P>
+The warning was based on the results of the latest national
+investigation conducted by the State Environmental Protection
+Administration (Sepa) over the past two years.
+</P>
+<P>
+The rapid development of wireless communication, high-voltage
+power grids and the ever-increasing volume of electronic products
+used at home or in offices and hospitals have exposed the public
+to a large quantity of electromagnetic waves, according to Sepa
+Minister Xie Zhenhua.
+</P>
+<P>
+Xie has called for the introduction of legislative measures to
+limit radiations to their lowest possible level.
+</P>
+<P>
+Electromagnetic pollution control should become a major concern
+in China's environmental protection program, and be listed on the
+work agenda of local governments, Xie said yesterday at a national
+meeting in Beijing.
+</P>
+<P>
+All electrical products are artificial sources of
+electromagnetic waves. When this radiation becomes too powerful,
+it can harm people's health, said Zhao Yamin, an official with
+Sepa.
+</P>
+<P>
+The impact of environmental electromagnetic radiation is still
+within international standards in most parts of China, and has not
+yet become a serious environmental risk, said Zhang Zhigang, a
+Sepa expert.
+</P>
+<P>
+The two-year (1997-98) investigation has found that the country
+currently has a total of 10,235 television and radio broadcasting
+transmitters, with a total capacity of 130,000 kilowatts. 
+</P>
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('../exit.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('../exit.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>

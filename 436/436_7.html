@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InfoRetro Prototype</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   
+</head>
+    
+<style>
+
+    
+    #info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 25px 50px;
+    }
+   
+</style>
+
+<body style="height: 100%">
+    <div id="body" style="padding: 10px">
+
+        <svg id="svg" width="1920" height="1080">
+            
+            <foreignobject id="fo" class="node" width="60%" height="100%">
+                
+                <h1>Topic: "Railway Accidents" </h1>
+                <div>
+                    <h2> AP Top News at 10 p.m. EDT </h2>
+                    <P>
+                            WASHINGTON (AP) -- President Clinton is standing back and leaving decisions
+                         in the Elian Gonzalez custody case to Attorney General Janet Reno. ''The
+                         attorney general is leading the effort,'' presidential spokesman Joe Lockhart
+                         said. Clinton said today that the boy should be promptly reunited with his
+                         father, now that a federal court has ruled that Elian must stay in the United
+                         States until the court decides whether he should get an asylum hearing. A
+                         hearing was set for May 11.
+                         </P>
+                         <P>
+                         South Korean Wartime Killings Documented
+                         </P>
+                         <P>
+                            DOKCHON, South Korea (AP) -- South Korean soldiers and police, observed at
+                         times by U.S. Army officers, executed more than 2,000 political prisoners
+                         without trial in the early weeks of the Korean War, according to declassified
+                         U.S. military documents and witnesses. Supreme commander Gen. Douglas MacArthur
+                         became aware of at least one of the mass shootings, according to documents
+                         originally classified ''top secret.'' The new information, detailed in reporting
+                         by The Associated Press and a Korean researcher, substantiates what some
+                         historians have long believed: Large numbers of South Korean leftists arrested
+                         by the right-wing regime were secretly killed.
+                         </P>
+                         <P>
+                         Service Marks Columbine Anniversary
+                         </P>
+                         <P>
+                            LITTLETON, Colo. (AP) -- Coloradans fell silent while a church bell tolled 13
+                         times in memory of the first anniversary of the nation's deadliest school
+                         shooting. The bell tolled 13 times at 11:21 a.m. today, the precise moment two
+                         teen-agers opened fire in Columbine High School on April 20, 1999. At private
+                         ceremonies and public remembrances all day and into the night today, students,
+                         staff, survivors and strangers came together to mark the moment that Dylan
+                         Klebold and Eric Harris began the bloodbath, killing 12 students and a teacher
+                         and wounding 26 before taking their own lives.
+                         </P>
+                         <P>
+                         Ex-Cops Sentenced in Alcohol Killing
+                         </P>
+                         <P>
+                            MEXICO CITY (AP) -- Six former Mexico City policemen convicted of the robbery
+                         and murder by alcohol poisoning of an American student have been sentenced to up
+                         to 98 years in prison. Frederick McPhail, 27, was found in his parked car
+                         Chapultepec Park in Mexico City in November 1998. For their roles in the death,
+                         Francisco Leon Gonzalez received 99 years in prison and Lucio Tapia Galindo
+                         received 85 years, the daily newspaper Reforma reported Thursday. The two were
+                         active police officers at the time of the crime. Their four accomplices had
+                         retired from the force when McPhail died. Three of them received sentences of 79
+                         years, while a fourth received 68 years, Reforma said.
+                         </P>
+                         <P>
+                         Survey: Overweight Need More Exercise
+                         </P>
+                         <P>
+                            ATLANTA (AP) -- The vast majority of overweight adults trying to shed pounds
+                         aren't getting enough exercise, the government said today. A 1998 national
+                         survey by the Centers for Disease Control and Prevention found that 53.8 percent
+                         of American adults reported being overweight and that half of them were trying
+                         to lose weight. Most of those trying to lose weight -- 62.7 percent -- were
+                         exercising, but only 28 percent said they exercised 30 minutes a day at least
+                         five days a week, the minimum government recommendation.
+                         </P>
+                         
+                        
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="relevant();draw();screenshot2();redirect('436_8.html');">Relevant</button>
+                <button type="button" class="btn btn-secondary" onclick="notrelevant();draw();screenshot2();redirect('436_8.html');">Not relevant</button>
+                
+            </foreignobject>
+		<path/>
+	</svg>
+    <div id='info'>
+    </div>
+        
+    </div>    
+
+</body>	
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+ 
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/mousetracking.js"></script>
+    
+    
+</html>
