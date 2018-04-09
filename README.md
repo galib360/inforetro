@@ -1,5 +1,5 @@
-# inforetro
-Project for Information Retrieval
+# InfoRetro
+Group Project for Information Retrieval
 
 Proposed Solution: Our team believes that there is an opportunity to reproduce the paper *Mouse Movement During Relevance Judging: Implications for Determining User Attention*. With this in mind, our project goals are:
 
